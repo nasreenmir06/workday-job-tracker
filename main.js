@@ -2,8 +2,7 @@
 
 function main() {
   // Check if the spreadsheet exists
-  // Change spreadsheet name accordingly, if you're not using this for internships
-  var sheetName = "Workday Internship Tracker";
+  var sheetName = "Workday Job Tracker";
   var spreadsheet = getOrCreateSpreadsheet(sheetName);
 
   // Get the most recent job title and corresponding date applied from the spreadsheet
@@ -68,7 +67,7 @@ function scrapeEmails(lastJobDate, lastJobTitle, spreadsheet) {
   var formattedDate = lastJobDate.toISOString().slice(0, 10);
   // Search for emails from any sender at myworkday.com with the specified keywords
   // Change the search query (the part in the parentheses) to match your purposes. Remove that part completely if you'd like to just search all emails from Workday
-  var query = `from:@myworkday.com (software OR Software OR intern OR Intern OR Internship OR internship) after:${formattedDate}`;
+  var query = `from:@myworkday.com (ENTER KEYWORDS HERE) after:${formattedDate}`;
   var threads = GmailApp.search(query);
   
   if (threads.length > 0) {

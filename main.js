@@ -31,7 +31,7 @@ function getOrCreateSpreadsheet(sheetName) {
     sheet.getRange("B1").setValue("Company");
     sheet.getRange("C1").setValue("Location");
     sheet.getRange("D1").setValue("Date");
-    sheet.getRange("E1").setValue("Update");
+    sheet.getRange("E1").setValue("Status");
 
     // Set text wrapping for columns A-E
     sheet.getRange("A:E").setWrap(true);
@@ -102,7 +102,7 @@ function scrapeEmails(lastJobDate, lastJobTitle, spreadsheet) {
           
           // Only add if the type is "confirmation"
           if (jobDetails.type === "confirmation") {
-            sheet.appendRow([jobDetails.title, jobDetails.company, jobDetails.location, jobDetails.date, ""]);
+            sheet.appendRow([jobDetails.title, jobDetails.company, jobDetails.location, jobDetails.date, "Applied"]);
           }
           if (jobDetails.type === "update") {
             // Get the range of column A

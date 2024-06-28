@@ -7,7 +7,7 @@ This is a Google Apps script created with the purpose of providing a quick and e
 - Open Google Apps Script and create a new project
 - Copy and paste the "main.js" file.
 - Change the search query (the part in the parentheses) as needed (line 70). If you would like to just search all emails from Workday, remove the parentheses part completely.
-- Visit https://aistudio.google.com/app/apikey and generate an API key. Copy and paste this key into the API field (line 134)
+- Visit https://aistudio.google.com/app/apikey and generate an API key for free. Copy and paste this key into the API field (line 134)
 - Save your script and give it a name, and then run the script! You will have to authorize some stuff though. In the pop-up, click "Advanced", and then click "Go to (script title)". The link to the spreadsheet created will appear in the console logger. Copy and paste this link in a new tab to see the results!
 - Run the script whenever you want to update your spreadsheet. All you have to do is just open the same script again and click the run button. The script will take care of the rest.
 - If you have any issues, please report them using the issues tab. Alternatively, you can reach me at nasreenmir06@gmail.com. 

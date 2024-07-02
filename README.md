@@ -18,3 +18,5 @@ This is a Google Apps script created with the purpose of providing a quick and e
 - Make the script work with jobs applied to on SAP Success Factors and LinkedIn.
 - Make the script work with all emails from any sender.
 - Automated follow-up emails?
+
+I also wrote a Medium article about how I built this app. Read it here: https://medium.com/@nasreenmir06/how-i-built-a-job-application-parser-with-google-apps-script-d60fe3950f51
